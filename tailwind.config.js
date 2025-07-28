@@ -1,3 +1,4 @@
+// tailwind.config.js
 module.exports = {
   darkMode: ["class"],
   content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}", "*.{js,ts,jsx,tsx,mdx}"],
@@ -82,10 +83,43 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", "Prompt", "system-ui", "sans-serif"],
       },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        'pulse-glow': {
+          '0%, 100%': {
+            boxShadow: '0 0 20px rgba(168, 85, 247, 0.3)',
+          },
+          '50%': {
+            boxShadow: '0 0 40px rgba(168, 85, 247, 0.6)',
+          },
+        },
+        'gradient-text': {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
+      },
       animation: {
         float: "float 6s ease-in-out infinite",
         "pulse-glow": "pulse-glow 3s ease-in-out infinite",
         "gradient-text": "gradient-text 8s ease infinite",
+      },
+      backgroundImage: {
+        "tab-active": "linear-gradient(to right, #a855f7, #d946ef)",
+        "text-gradient": "linear-gradient(-45deg, #a855f7, #d946ef, #0ea5e9, #6366f1)",
+      },
+      boxShadow: {
+        "lift-hover": "0 20px 40px rgba(168, 85, 247, 0.15)",
+      },
+      backdropBlur: {
+        glass: '10px',
+      },
+      transitionProperty: {
+        transform: 'transform',
+        'box-shadow': 'box-shadow',
       },
     },
   },
