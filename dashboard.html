@@ -37,7 +37,7 @@
                         </svg>
                     </button>
                     <div class="w-8 h-8 rounded-full overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=32&h=32&fit=crop&crop=face" alt="Profile" class="w-full h-full object-cover">
+                        <img src="/pic/p1.png" alt="Profile" class="w-full h-full object-cover">
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@
             <div class="mb-8">
                 <div class="flex items-center gap-4 mb-6">
                     <div class="w-16 h-16 rounded-full overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&crop=face" alt="Anna Smith" class="w-full h-full object-cover">
+                        <img src="/pic/p1.png" alt="Anna Smith" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h1 class="text-2xl font-bold text-gray-900">ยินดีต้อนรับกลับ, Anna Smith!</h1>
@@ -116,14 +116,15 @@
 
                 <!-- Tabs -->
                 <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                    <div class="border-b border-gray-100">
-                        <div class="flex space-x-1 p-1">
-                            <button onclick="showTab('bookings')" class="tab-button active flex-1 py-3 px-4 text-sm font-medium rounded-lg transition-all">การจอง</button>
-                            <button onclick="showTab('earnings')" class="tab-button flex-1 py-3 px-4 text-sm font-medium rounded-lg transition-all text-gray-600 hover:text-gray-900">รายได้</button>
-                            <button onclick="showTab('reviews')" class="tab-button flex-1 py-3 px-4 text-sm font-medium rounded-lg transition-all text-gray-600 hover:text-gray-900">รีวิว</button>
-                            <button onclick="showTab('profile')" class="tab-button flex-1 py-3 px-4 text-sm font-medium rounded-lg transition-all text-gray-600 hover:text-gray-900">โปรไฟล์</button>
-                        </div>
-                    </div>
+                  <div class="border-b border-gray-100 bg-gray-100 rounded-xl">
+  <div class="flex space-x-1 p-1">
+    <button onclick="showTab('bookings')" class="tab-button active flex-1 py-3 px-4 text-sm font-medium rounded-lg transition-all bg-white text-gray-900 shadow-sm">รายการจอง</button>
+    <button onclick="showTab('calendar')" class="tab-button flex-1 py-3 px-4 text-sm font-medium rounded-lg transition-all text-gray-600 hover:text-gray-900 bg-gray-100">ปฏิทิน</button>
+    <button onclick="showTab('reviews')" class="tab-button flex-1 py-3 px-4 text-sm font-medium rounded-lg transition-all text-gray-600 hover:text-gray-900 bg-gray-100">ความคิดเห็น</button>
+    <button onclick="showTab('notifications')" class="tab-button flex-1 py-3 px-4 text-sm font-medium rounded-lg transition-all text-gray-600 hover:text-gray-900 bg-gray-100">การแจ้งเตือน</button>
+  </div>
+</div>
+
 
                     <!-- Bookings Tab -->
                     <div id="bookings" class="tab-content active p-6">
